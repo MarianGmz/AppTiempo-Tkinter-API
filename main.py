@@ -20,7 +20,8 @@ def mostrar_respuesta(clima):
         messagebox.showerror("Error",f"No se indico ninguna ciudad {e}")
 def clima_json(ciudad):
     try:
-        API_key ="88d3c3af8b2c7c195c5fb90be7397862"
+        #Ingrese su api key en esta variable
+        API_key =""
         URL = "https://api.openweathermap.org/data/2.5/weather"
         parametros = {"APPID":API_key,"q":ciudad,"units":"metric","lang":"es"}
         response = requests.get(URL,params=parametros)
